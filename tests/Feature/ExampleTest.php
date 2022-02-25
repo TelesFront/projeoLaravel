@@ -18,4 +18,18 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
-}
+
+    public function rota_home_retorna_sucesso()
+        {
+            $response = $this->get('/home');
+
+            $response->assertStatus(200);
+        }
+
+    public function a_rota_produtos_retorna_com_sucesso()
+        {
+            $response = $this->get('/produtos');
+
+            $response->assertStatus(200);
+        }
+    }
