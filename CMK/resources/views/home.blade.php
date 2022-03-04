@@ -22,6 +22,19 @@
     </head>
     
     <body class="antialiased">
-        <h1>Home</h1>
+        <header>
+            <nav>
+                <a class="logo" href="/"> CMK du mal </a>
+                <ul class="nav-list">
+                    <li><a href="/"></a>Início</li>
+                    <li><a href="/"></a>Serviços</li>
+                    <li><a href="/"></a>Sobre</li>
+                    <li><a href="/"></a>Contato</li>
+                </ul>
+            </nav>
+            <main>
+                
+            </main>
+        </header>
     </body>
 </html>
