@@ -20,6 +20,7 @@
             }
         </style>
     </head>
+    
     <body class="antialiased">
         <h1>Home</h1>
     </body>
