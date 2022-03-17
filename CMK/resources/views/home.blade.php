@@ -35,7 +35,7 @@
         </div>
 
         <ul class="nav-list">
-          <li><a href="#">Início</a></li>
+          <li><a href="#">Inícioo</a></li>
           <li><a href="#">Serviços</a></li>
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Contato</a></li>
