@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\produtos;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,5 +27,10 @@ Route ::get('/home', function(){
 });
 
 Route ::get('/produtos', function(){
-	return view('produtos');
+	$camisaPreta = new produtos();
+	$camisaPreta->descri = "chora sistema";
+	$camisaPreta->cor = "preta";
+	$camisaPreta->categoria = "Zika Neutra";
+	$camisaPreta->save();
+	return produtos::all();
 });
