@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ta garantindo a responsividade do formulário */
+  }
+   
+  a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.8;
+  }
+
+
+  li:hover {
+    font-size: 16px;
+    text-decoration: underline 0.15em;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background-color: rgba(248, 248, 248, 0.6);
+    height: 12vh;
+  }
+  
+/* aqui vai a imagem de background */
+
+  header {
+    background: url("../../public/images/fundo2.png") no-repeat center center;
+    background-size: cover;
+    height: 75vh;
+  }
+  
+  .nav-list {
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 4px;
+    margin-left: 32px;
+  }
+  
+  /* aqui começa a responsividade do navbar */
+
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* formatação do icone do menu mobile */
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  /* quando a tela for menor que 999px o menu mobile vai aparecer */
+ 
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    .nav-list {
+      position: absolute;
+      top: 12vh;
+      right: 0;
+      width: 90vw;
+      height: 88vh;
+      background-color: rgba(255, 255, 255, 0.61);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  @media (max-width:400px){
+    body {
+      overflow-x: hidden;
+    }
+  }
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+
+/* aprtir da qui se inicia a formatação dos blocos da página */
+
+/* bloco "NOSSOS SERVIÇOS" */
+
+/* formatação geral dos HR's */
+hr{
+  margin-left:37%;
+  margin-top: 5px;
+}
+
+.servicos {
+  padding-top: 80px;
+  background-color: rgb(235, 235, 235);
+  color: rgb(8, 8, 8);
+  height: 75vh;
+}
+
+.tituloServicos {
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+/* bloco "SOBRE NÓS" */
+
+.sobreNos {
+  padding-top: 45px;
+  background-color: rgb(27, 27, 27);
+  color: whitesmoke;
+  height: 75vh;
+}
+
+.tituloSobre {
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+/* bloco "CONTATE-NOS" */
+
+.contato {
+  padding-top: 45px;
+  padding-bottom: 15px;
+  background-color: rgb(240, 236, 236);
+  color: rgb(8, 8, 8);
+  
+}
+
+.tituloContato {
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
