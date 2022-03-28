@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>CMK</title>
-      <link rel="stylesheet" href="../../public/css/app.css" />
-      <link rel="stylesheet" href="../../public/css/cssForm.css">
+      <link rel="stylesheet" href="{{url('css/app.css')}}" />
+      <link rel="stylesheet" href="{{url('css/cssForm.css')}}" />
       
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,8 +103,8 @@
     </main>
 
     <footer class="rodape">
-      <h3><i> 2021 - 2022 Copyright ©  </i> — por Teles D.A  </h3>
+      <h3><i> 2022 - 2023 Copyright ©  </i> — por Teles D.A  </h3>
     </footer>
-    <script src="../../public/js/app.js"></script>
+    <script src="{{url('js/app2.js')}}""></script>
   </body>
 </html> 
